@@ -1,4 +1,5 @@
 export default interface IInfo {
+    [key: string]: number | null | string | undefined | IInfo[]
     countView: number,
     countPlay: number,
     countSend: number,
@@ -11,5 +12,5 @@ export default interface IInfo {
     title: string,
     viewSend: number,
     viewPay: number,
-    children?: Info[]
+    children?: IInfo[]
 }

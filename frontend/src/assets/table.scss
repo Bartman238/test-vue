@@ -1,9 +1,14 @@
 .table {
     width: 100%;
+    border-spacing: 0;
     
     &__row {
         &--pushable {
             cursor: pointer;
+        }
+        
+        &--summary {
+            background: darkgrey;
         }
     }
     
@@ -19,6 +24,7 @@
     }
     
     &__cell {
+        padding: 8px 0;
         
         &:not(&--title) {
             text-align: center;

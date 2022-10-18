@@ -52,7 +52,7 @@ export default defineComponent({
   >
     <td
         class="table__cell table__cell--title"
-        :style="{'padding-left': `${level * 16}px`}"
+        :style="{'padding-left': `${level * 20}px`}"
     >
       <span
         v-if="!!data.children"
@@ -61,13 +61,13 @@ export default defineComponent({
       >
         ^
       </span>{{ data.title }}</td>
-    <td class="table__cell">{{data.countOrder}}</td>
-    <td class="table__cell">{{data.countPay}}</td>
+    <td class="table__cell">{{data.countView}}</td>
     <td class="table__cell">{{data.countPlay}}</td>
     <td class="table__cell">{{data.countSend}}</td>
-    <td class="table__cell">{{data.countView}}</td>
-    <td class="table__cell">{{data.viewPay}}</td>
+    <td class="table__cell">{{data.countOrder}}</td>
+    <td class="table__cell">{{data.countPay}}</td>
     <td class="table__cell">{{data.viewSend}}</td>
+    <td class="table__cell">{{data.viewPay}}</td>
   </tr>
   <app-table-row
       v-if="!!data.children"

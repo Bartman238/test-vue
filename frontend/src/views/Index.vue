@@ -11,14 +11,17 @@ export default defineComponent({
   }),
   computed: {
     mock() {
-      return JSON.parse(this.mock_json).items;
+      return JSON.parse(this.mock_json);
     }
+  },
+  mounted() {
+    console.log(this.mock)
   }
 })
 </script>
 
 <template>
   <main>
-    <app-table :data="mock" />
+    <app-table :data="mock.items" />
   </main>
 </template>
