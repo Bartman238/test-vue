@@ -1,0 +1,27 @@
+.table {
+    width: 100%;
+    
+    &__row {
+        &--pushable {
+            cursor: pointer;
+        }
+    }
+    
+    &__arrow {
+        transform-origin: center;
+        transform: rotate(90deg);
+        display: inline-block;
+        margin-right: 6px;
+        
+        &--open {
+            transform: rotate(180deg);
+        }
+    }
+    
+    &__cell {
+        
+        &:not(&--title) {
+            text-align: center;
+        }
+    }
+}
